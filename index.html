@@ -12,6 +12,10 @@
         <header class="main-header">
             <h1 id="web-title">CalTech</h1>
 
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                &#9776;
+            </button>
+
             <section class="category-list">
                 <button href="#" type="button" class="selection-btn btn-active">Segitiga</button>
                 <button href="#" type="button" class="selection-btn">Persegi Panjang</button>
@@ -47,7 +51,7 @@
 
                 <hr>
 
-                <form class="segitiga-form">
+                <form class="segitiga-form" onsubmit="luasSegitiga(); return false">
                     <header>
                         <h1 class="segitiga-form-header">Hitung Luas Segitiga</h1>
                     </header>
@@ -57,10 +61,11 @@
                         <input type="number" id="tinggi" name="tinggi" placeholder="Tinggi">
                     </div>
 
-                    <p id="result">Hasil Perhitungan:</p>
+                    <p>Hasil Perhitungan:</p>
+                    <p id="result-luas"></p>
 
-                    <button class="hitung-btn">Hitung</button>
-                    <button class="reset-btn">Reset</button>
+                    <button class="hitung-btn" type="submit">Hitung</button>
+                    <button class="reset-btn" type="reset" onclick="resetFormLuas()">Reset</button>
                 </form>
             </section>
 
@@ -91,7 +96,7 @@
 
                 <hr>
 
-                <form class="segitiga-form">
+                <form class="segitiga-form" onsubmit="kelilingSegitiga(); return false">
                     <header>
                         <h1 class="segitiga-form-header">Hitung Keliling Segitiga</h1>
                     </header>
@@ -102,12 +107,15 @@
                         <input type="number" id="sisi-3" name="sisi 3" placeholder="Sisi 3">
                     </div>
 
-                    <p id="result">Hasil Perhitungan:</p>
+                    <p>Hasil Perhitungan:</p>
+                    <p id="result-keliling"></p>
 
-                    <button class="hitung-btn">Hitung</button>
-                    <button class="reset-btn">Reset</button>
+                    <button class="hitung-btn" type="submit">Hitung</button>
+                    <button class="reset-btn" type="reset" onclick="resetFormKeliling()">Reset</button>
                 </form>
             </section>
         </main>
+
+        <script src="js\script.js"></script>
     </body>
 </html>
