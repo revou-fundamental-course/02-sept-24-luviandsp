@@ -4,18 +4,17 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
         <title>CalTech - Calculator Tech</title>
         <link rel="stylesheet" href="css\styles.css">
     </head>
     <body>
         <header class="main-header">
             <h1 id="web-title">CalTech</h1>
-
+            
             <button class="menu-toggle" aria-label="Toggle navigation">
-                &#9776;
+                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/FFFFFF/menu--v6.png" alt="menu--v6"/>
             </button>
-
+            
             <section class="category-list">
                 <button href="#" type="button" class="selection-btn btn-active">Segitiga</button>
                 <button href="#" type="button" class="selection-btn">Persegi Panjang</button>
@@ -23,18 +22,18 @@
                 <button href="#" type="button" class="selection-btn">Lingkaran</button>
             </section>
         </header>
-
+        
         <main class="main-content">
             <section class="main-section">
                 <header class="section-header">
                     <h1>Luas Segitiga</h1>
                 </header>
-
+                
                 <article class="segitiga-content">
                     <div class="segitiga-img">
                         <img src="assets\segitiga.png" alt="segitiga">
                     </div>
-
+                    
                     <div class="luas-segitiga-rumus">
                         <p>Rumus Luas Segitiga:</p>
 
@@ -48,40 +47,40 @@
                         </div>
                     </div>
                 </article>
-
+                
                 <hr>
-
+                
                 <form class="segitiga-form" onsubmit="luasSegitiga(); return false">
                     <header>
                         <h1 class="segitiga-form-header">Hitung Luas Segitiga</h1>
                     </header>
-
+                    
                     <div class="input-nilai-luas">
                         <input type="number" id="panjang-alas" name="panjang-alas" placeholder="Panjang Alas">
                         <input type="number" id="tinggi" name="tinggi" placeholder="Tinggi">
                     </div>
-
+                    
                     <p>Hasil Perhitungan:</p>
                     <p id="result-luas"></p>
-
+                    
                     <button class="hitung-btn" type="submit">Hitung</button>
                     <button class="reset-btn" type="reset" onclick="resetFormLuas()">Reset</button>
                 </form>
             </section>
-
+            
             <section class="main-section">
                 <header class="section-header">
                     <h1>Keliling Segitiga</h1>
                 </header>
-
+                
                 <article class="segitiga-content">
                     <div class="segitiga-img">
                         <img src="assets\segitiga.png" alt="segitiga">
                     </div>
-
+                    
                     <div class="keliling-segitiga-rumus">
                         <p>Rumus Keliling Segitiga:</p>
-
+                        
                         <p class="rumus">K = S1 + S2 + S3</p>
                         
                         <div class="diketahui-keliling">
@@ -93,20 +92,20 @@
                         </div>
                     </div>
                 </article>
-
+                
                 <hr>
-
+                
                 <form class="segitiga-form" onsubmit="kelilingSegitiga(); return false">
                     <header>
                         <h1 class="segitiga-form-header">Hitung Keliling Segitiga</h1>
                     </header>
-
+                    
                     <div class="input-nilai-keliling">
                         <input type="number" id="sisi-1" name="sisi 1" placeholder="Sisi 1">
                         <input type="number" id="sisi-2" name="sisi 2" placeholder="Sisi 2">
                         <input type="number" id="sisi-3" name="sisi 3" placeholder="Sisi 3">
                     </div>
-
+                    
                     <p>Hasil Perhitungan:</p>
                     <p id="result-keliling"></p>
 
@@ -118,4 +117,4 @@
 
         <script src="js\script.js"></script>
     </body>
-</html>
+    </html>
