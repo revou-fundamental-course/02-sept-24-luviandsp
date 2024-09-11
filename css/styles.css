@@ -39,6 +39,7 @@ body {
     border-style: none;
     font-size: large;
     font-weight: bolder;
+    text-decoration: none;
 }
 
 .selection-btn:hover {
@@ -68,23 +69,23 @@ body {
     border-radius: 10px 10px 0px 0px;
 }
 
-.segitiga-img {
+.shape-img {
     text-align: center;
 }
 
-.segitiga-content {
+.shape-content {
     padding: 20px;
 }
 
-.diketahui-luas p {
+.diketahui-luas-segitiga p {
     margin: 15px 0px;
 }
 
-.diketahui-keliling p {
+.diketahui-keliling-segitiga p {
     margin: 8px 0px;
 }
 
-.segitiga-form {
+.shape-form {
     padding: 20px;
 }
 
@@ -94,7 +95,7 @@ body {
     font-size: 20px;
 }
 
-.segitiga-form-header {
+.shape-form-header {
     text-align: center;
 }
 
@@ -115,18 +116,19 @@ body {
 .input-nilai-luas input {
     background-color: #d2d2d2;
     color: black;
-    margin: 20px 0px;
+    margin: 10px 0px;
     height: 30px;
     border-radius: 8px;
     border-style: none;
     padding: 10px;
 }
 
-#panjang-alas {
+#panjang-alas-segitiga {
     margin-top: 30px;
+    margin-bottom: 32px;
 }
 
-#tinggi {
+#tinggi-segitiga {
     margin-bottom: 38px;
 }
 
@@ -220,7 +222,7 @@ body {
         padding: 10px 15px;
     }
 
-    .segitiga-img img {
+    .shape-img img {
         width: 100%;
     }
 }

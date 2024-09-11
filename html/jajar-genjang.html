@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CalTech - Calculator Tech</title>
-        <link rel="stylesheet" href="css\styles.css">
+        <link rel="stylesheet" href="..\css\styles.css">
     </head>
     <body>
         <header class="main-header">
@@ -16,33 +16,33 @@
             </button>
             
             <section class="category-list">
-                <a href="index.html" type="button" class="selection-btn btn-active">Segitiga</a>
-                <a href="html\persegi-panjang.html" type="button" class="selection-btn">Persegi Panjang</a>
-                <a href="html\jajar-genjang.html" type="button" class="selection-btn">Jajar Genjang</a>
-                <a href="html\lingkaran.html" type="button" class="selection-btn">Lingkaran</a>
+                <a href="..\index.html" type="button" class="selection-btn">Segitiga</a>
+                <a href="persegi-panjang.html" type="button" class="selection-btn">Persegi Panjang</a>
+                <a href="jajar-genjang.html" type="button" class="selection-btn btn-active">Jajar Genjang</a>
+                <a href="lingkaran.html" type="button" class="selection-btn">Lingkaran</a>
             </section>
         </header>
         
         <main class="main-content">
             <section class="main-section">
                 <header class="section-header">
-                    <h1>Luas Segitiga</h1>
+                    <h1>Luas Jajar Genjang</h1>
                 </header>
                 
                 <article class="shape-content">
                     <div class="shape-img">
-                        <img src="assets\segitiga.png" alt="Gambar Segitiga">
+                        <img src="..\assets\jajar-genjang.png" alt="Gambar Jajar Genjang">
                     </div>
                     
                     <div class="luas-shape-rumus">
-                        <p>Rumus Luas Segitiga:</p>
+                        <p>Rumus Luas Jajar Genjang:</p>
 
-                        <p class="rumus">L = 1/2 x a x t</p>
+                        <p class="rumus">L = a x t</p>
                         
-                        <div class="diketahui-luas-segitiga">
+                        <div class="diketahui-luas">
                             <p>Diketahui:</p>
                             <p>L = Luas</p>
-                            <p>a = Panjang Alas</p>
+                            <p>a = Alas</p>
                             <p>t = Tinggi</p>
                         </div>
                     </div>
@@ -50,71 +50,69 @@
                 
                 <hr>
                 
-                <form class="shape-form" onsubmit="luasSegitiga(); return false">
+                <form class="shape-form" onsubmit="luasJajarGenjang(); return false">
                     <header>
-                        <h1 class="shape-form-header">Hitung Luas Segitiga</h1>
+                        <h1 class="shape-form-header">Hitung Luas Jajar Genjang</h1>
                     </header>
                     
                     <div class="input-nilai-luas">
-                        <input type="number" id="panjang-alas-segitiga" name="panjang-alas" placeholder="Panjang Alas">
-                        <input type="number" id="tinggi-segitiga" name="tinggi" placeholder="Tinggi">
+                        <input type="number" id="alas-jajar-genjang" name="alas-jajar-genjang" placeholder="Alas">
+                        <input type="number" id="tinggi-jajar-genjang" name="tinggi-jajar-genjang" placeholder="Tinggi">
                     </div>
                     
                     <p>Hasil Perhitungan:</p>
-                    <p id="result-luas-segitiga"></p>
+                    <p id="result-luas-jajar-genjang"></p>
                     
                     <button class="hitung-btn" type="submit">Hitung</button>
-                    <button class="reset-btn" type="reset" onclick="resetFormLuasSegitiga()">Reset</button>
+                    <button class="reset-btn" type="reset" onclick="resetFormLuasJajarGenjang()">Reset</button>
                 </form>
             </section>
             
             <section class="main-section">
                 <header class="section-header">
-                    <h1>Keliling Segitiga</h1>
+                    <h1>Keliling Jajar Genjang</h1>
                 </header>
                 
                 <article class="shape-content">
                     <div class="shape-img">
-                        <img src="assets\segitiga.png" alt="Gambar Segitiga">
+                        <img src="..\assets\jajar-genjang.png" alt="Gambar Jajar Genjang">
                     </div>
                     
                     <div class="keliling-shape-rumus">
-                        <p>Rumus Keliling Segitiga:</p>
+                        <p>Rumus Keliling Jajar Genjang:</p>
                         
-                        <p class="rumus">K = S1 + S2 + S3</p>
+                        <p class="rumus">K = 2 x (a + b)</p>
                         
-                        <div class="diketahui-keliling-segitiga">
+                        <div class="diketahui-keliling">
                             <p>Diketahui:</p>
                             <p>K = Keliling</p>
-                            <p>S1 = Sisi 1</p>
-                            <p>S2 = Sisi 2</p>
-                            <p>S3 = Sisi 3</p>
+                            <p>a = Sisi Datar</p>
+                            <p>b = Sisi Miring</p>
                         </div>
                     </div>
                 </article>
                 
                 <hr>
                 
-                <form class="shape-form" onsubmit="kelilingSegitiga(); return false">
+                <form class="shape-form" onsubmit="kelilingJajarGenjang(); return false">
                     <header>
-                        <h1 class="shape-form-header">Hitung Keliling Segitiga</h1>
+                        <h1 class="shape-form-header">Hitung Keliling Jajar Genjang</h1>
                     </header>
                     
                     <div class="input-nilai-keliling">
-                        <input type="number" id="sisi-1" name="sisi 1" placeholder="Sisi 1">
-                        <input type="number" id="sisi-2" name="sisi 2" placeholder="Sisi 2">
-                        <input type="number" id="sisi-3" name="sisi 3" placeholder="Sisi 3">
+                        <input type="number" id="sisi-datar" name="sisi datar" placeholder="Sisi Datar">
+                        <input type="number" id="sisi-miring" name="sisi miring" placeholder="Sisi Miring">
                     </div>
                     
                     <p>Hasil Perhitungan:</p>
-                    <p id="result-keliling-segitiga"></p>
+                    <p id="result-keliling-jajar-genjang"></p>
 
                     <button class="hitung-btn" type="submit">Hitung</button>
-                    <button class="reset-btn" type="reset" onclick="resetFormKelilingSegitiga()">Reset</button>
+                    <button class="reset-btn" type="reset" onclick="resetFormKelilingJajarGenjang()">Reset</button>
                 </form>
             </section>
         </main>
 
-        <script src="js\script.js"></script>
+        <script src="..\js\script.js"></script>
     </body>
     </html>
