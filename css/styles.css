@@ -73,6 +73,10 @@ body {
     text-align: center;
 }
 
+.shape-img img {
+    width: 60%;
+}
+
 .shape-content {
     padding: 20px;
 }
@@ -195,6 +199,7 @@ body {
         display: none;
         justify-content: space-evenly;
         position: absolute;
+        text-align: center;
         top: 70px;
         margin-left: 0;
         left: 0;
@@ -220,10 +225,6 @@ body {
     .selection-btn {
         font-size: medium;
         padding: 10px 15px;
-    }
-
-    .shape-img img {
-        width: 100%;
     }
 }
 
