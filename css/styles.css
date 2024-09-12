@@ -77,6 +77,10 @@ body {
     width: 60%;
 }
 
+.lingkaran-img img {
+    width: 35%;
+}
+
 .shape-content {
     padding: 20px;
 }
